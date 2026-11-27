@@ -2116,6 +2116,13 @@
     background: rgba(0, 0, 0, 0.82);
 }
 
+.runway-photo-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(8px, 1vw, 14px);
+    align-items: center;
+}
+
 #runwayPhotoDialog img {
     display: block;
     width: 100%;
@@ -2139,6 +2146,10 @@
     #runwayPhotoDialog[open] {
         grid-template-columns: 1fr;
         overflow-y: auto;
+    }
+
+    .runway-photo-images {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     #runwayPhotoDialog img {
@@ -2644,16 +2655,19 @@
             Sincerely, Geann Paula D. Ycong <br>
             </p>
 
-            <button class="runway-photo-button" type="button" onclick="document.getElementById('runwayPhotoDialog').showModal()">RUNWAY PHOTO</button>
+            <button class="runway-photo-button" type="button" onclick="document.getElementById('runwayPhotoDialog').showModal()">CAREER EXPO</button>
         </div>
     </div>
 
     <dialog id="runwayPhotoDialog" onclick="if (event.target === this) this.close()">
-        <img src="placeholder.webp" alt="Runway photo placeholder">
+        <div class="runway-photo-images">
+            <img src="placeholder.webp" alt="Career Expo placeholder">
+            <img src="expo.webp" alt="Career Expo photo">
+        </div>
         <p>
-            On November 26, 2026, the Career Runway was held at the Science and Technology Education Center Gymnasium. Everyone wore outfits based on their future career and strutted proudly on the stage. The event featured a variety of professions; I wore an outfit based on what I thought video game developers would wear, other than a hoodie and shorts. My outfit was based on the video game character, Chihiro Fujisaki, the Ultimate Programmer from Danganronpa: Trigger Happy Havoc— her digital AI alter ego's face appears on the Ita bag I wore. I thought it was fitting, as Danganronpa was one of the games that inspired me, and Chihiro was a  character who wanted to help her friends as much as she could through her skill in programming.  <br>
-            Honestly, I was rather confused about what to actually wear— ICT and computer programming-related professions don't have a strict uniform, as they primarily work in a hybrid setup or at home. But as I put on my outfit, I saw the others' outfits and heard Ma'am Dominguito's speech; I realized that my moment of confusion was okay. My future career is more than just a costume; it is a slow process that requires a lot of time and dedication. Like wondering if I will actually pull off my attire (which I did, don't get me wrong), I'll also end up wondering if I can pull off my future and find success. I'm sure others feel the same way as they wore their outfits. As long as I stay true to myself, plan, and prioritize supporting my family, I will come out successful.  <br>
-            In conclusion, the Career Runway event held at the Gymnasium was a great event to not only showcase other people's dream professions but also support them and make us realize our passion. As we get closer to our college years, it is important that we also value and make great memories here at STEC. The road may be bumpy, but I know I'll manage. <br>
+            On November 26-27, 2026, the Career Expo took place at the Science and Technology Education Center, with the Career Runway on the 26th and the Career Expo on the 27th. The event featured a variety of professions such as: Engineering, ICT, Medical, Business, and Law. For the career runway, my outfit was based on the video game character, Chihiro Fujisaki, the Ultimate Programmer from Danganronpa: Trigger Happy Havoc— her digital AI alter ego's face appears on the Ita bag I wore. I thought it was fitting, since Danganronpa inspired me, and Chihiro wanted to help her friends as much as she could through her programming skills. I also attended the ICT career talk and listened intently to the speaker in the ICT lab, as well as evaluated which college I would enroll in. <br>            Honestly, I was rather confused about what to actually wear— ICT and computer programming-related professions don't have a strict uniform, as they primarily work in a hybrid setup or at home. But as I put on my outfit, I saw the others' outfits and heard Ma'am Dominguito's speech; I realized that my moment of confusion was okay. My future career is more than just a costume; it is a slow process that requires a lot of time and dedication. Like wondering if I will actually pull off my attire (which I did, don't get me wrong), I'll also end up wondering if I can pull off my future and find success. I'm sure others feel the same way as they wore their outfits. As long as I stay true to myself, plan, and prioritize supporting my family, I will come out successful.  <br>
+            Honestly, even now, I am still doubting and wondering what my career will be in the future— to choose practicality or passion? I was also having a hard time choosing which college/university was fit for me and kept comparing myself with my other classmates. But through this event, I realized that my moment of confusion was okay. My future career is more than just a costume; it is a slow process that requires a lot of time and dedication. As a future ICT worker and game developer, I need to find a community to help guide me, as the speaker suggested. It is important to not remain introverted but learn to branch out and build confidence. I will make mistakes, and I'll learn from them; what matters most is that I stay true to myself, plan, and prioritize supporting my family. <br> 
+            In conclusion, the Career Expo event was a great event to not only showcase other people's dream professions but also support them and make us realize our passion. As we get closer to our college years, it is important that we also value and make great memories here at STEC. The road may be bumpy, but I know I'll manage.  <br>
         </p>
     </dialog>
 
